@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  #bg{
+      width: 100%;
+      min-height: 100vh;
+      /* background-color: #416b73; */
+      padding: 0 9vw;
+  }
+  
+  nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      /* height: 10vh; */
+      padding-top: 5vh;
+      /* background-color: rgb(134, 47, 47); */
+  }
+  
+  .logo{
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+  }
+  
+  .crcls{
+      display: flex;
+      align-items: center;
+  
+  }
+  
+  .crcl-1{
+      width: 2.5vw;
+      height: 2.5vw;
+      border-radius: 50%;
+      background-color: #F9C61B;
+  }
+  
+  .crcl-1:nth-child(2){
+      background-color: #1187E7;
+      margin-left: -0.9vw;
+      border: 1.8px solid white;
+  }
+  
+  .logo h1{
+      font-size: 1.5vw;
+  }
+  
+  nav .links{
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 2vw;
+      /* background-color: red; */
+  }
+  
+  nav .links a{
+      font-size: 1.2vw;
+      font-weight: 400;
+  }
+  
+  .btn{
+      font-size: 1vw;
+      font-weight: 400;
+      padding: .8vh .5vw;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #F9C61B;
+      color: #ffffff;
+  }
+  
+  .hero{
+      display: flex;
+      width: 100%;
+      height:  80vh;
+      /* background-color: bisque; */
+  }
+  
+  .lft{
+      width: 60%;
+      height: 100%;
+      /* background-color: blueviolet; */
+  }
+  
+  .rgt{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      height: 100%;
+      /* background-color: chocolate */
+  }
+  
+  .image{
+      width:  30vw;
+      height: 30vw;
+      border-radius: 50%;
+      background-image: url(https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+      background-position: center;
+  
+  }
+  
+  .ctn{
+      padding-top: 18vh;
+      display: flex;
+      gap: 1.5vh;
+      flex-direction: column;
+  }
+  
+  .ctn h1:nth-child(1){
+      font-size: 1vw;
+  }
+  
+  .ctn h1:nth-child(2){
+      color: #1187E7;
+      font-size: 1.5vw;
+  }
+  
+  
+  
+  .ctn h1:nth-child(3){
+      color: #F9C61B;
+      line-height: 7vh;
+      font-size: 5vw;
+  }
+  
+  .ctn h1:nth-child(4){
+      color: #F9C61B;
+      padding-left: 12.4vw;
+      font-size: 5vw;
+  }
+  
+  .ctn p{
+      
+      padding-right: 10vw;
+      line-height: 3vh;
+      word-spacing: 0.4vw;
+      font-family: sans-serif;
+      font-size: 1vw;
+      font-weight: 400;
+  }
+  
+  .hero-btn{
+      display: flex;
+      gap: 1vw;
+      padding-top: 2.5vh;
+  }
+  
+  .btn-1{
+      font-size: 0.8vw;
+      font-weight: 600;
+      padding: 1vh 1.5vw;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background-color: #F9C61B ;
+      color: white;
+  }
+  
+  .btn-1:nth-child(2){
+     border: 1px solid #F9C61B;
+     background-color: white;
+     color:#F9C61B;
+  }
+  
+  .social{
+    position: absolute;
+    bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10vw;
+      width: 83%;
+      height: 10vh;
+      /* background-color: rgb(181, 181, 235); */
+  }
+  
+  .social i{
+     font-size: 2.3vw;
+     color: #1187E7; 
+  }
+
+  nav i{
+    display: none;
+    font-size: 5vw;
+  }
+  
+  @media (min-width:0px) and (max-width:500px){
+    nav {  
+        padding-top: 3vh;
+    }
+    .logo {
+        /* background-color: #F9C61B; */
+        width: 50vw;
+    }
+    .logo h1 {
+        font-size: 3.5vw;
+    }
+    .crcl-1 {
+        width: 6.5vw;
+        height: 6.5vw;
+    }  
+    nav .links {
+        display: none;
+    }
+    .btn {
+        font-size: 2.3vw;
+        padding: 1vh 2.5vw;
+    }
+    nav i {
+        display: initial;
+        font-size: 5vw;
+    }
+    .hero {
+        gap: 5vw;
+        min-height: 100vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lft {
+        width: 100%;
+    }
+    .rgt {
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 6%;
+    }
+    .ctn {
+        gap: 1.5vh;
+        padding-top: initial;
+    }
+    .ctn h1:nth-child(1) {
+        font-size: 4vw;
+    }
+    .ctn h1:nth-child(2) {
+        font-size: 6vw;
+    }
+    .ctn h1:nth-child(3) {
+        line-height: 6vh;
+        font-size: 12vw;
+    }
+    .ctn h1:nth-child(4) {
+        line-height: 6vh; 
+        font-size: 12vw;
+        padding-left: initial;
+  }
+  .ctn p {
+   
+    padding-right: initial;
+   
+    font-size: 3vw;
+   
+}
+.hero-btn {
+    gap: 3vw;
+}
+.btn-1 {
+    font-size: 2.8vw;
+    padding: 2vh 7.5vw;
+}
+.social {
+    background-color: #1187e7;
+}
+.social i {
+    font-size: 7.3vw;
+    color: #ffffff;
+}
+.social {
+    position: fixed;
+    right: 0;
+    top: 23vw;
+    gap: 6vw;
+    width: 16%;
+    height: 45vh;
+    flex-direction: column;
+}
+  
+}
